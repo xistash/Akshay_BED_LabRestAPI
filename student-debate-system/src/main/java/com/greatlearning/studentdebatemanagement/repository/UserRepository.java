@@ -7,7 +7,7 @@ import com.greatlearning.studentdebatemanagement.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
 
-	@Query("SELECT u FROM User u WHERE u.username like ?1")
+	@Query("SELECT u   FROM User u WHERE   u.username like ?1")
 	User getUserByUsername(String username);
 
 }
