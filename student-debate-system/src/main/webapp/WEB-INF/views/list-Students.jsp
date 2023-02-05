@@ -5,12 +5,12 @@
 <html>
 
 <head>
-<!-- Required meta tags -->
+
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- Bootstrap CSS -->
+
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
@@ -26,11 +26,11 @@
 		<h3>Students Directory</h3>
 		<hr>
 
-		<!-- Add a search form -->
+		
 
 		<form action="/StudentManagement/student/search" class="form-inline">
 
-			<!-- Add a button -->
+			
 			<a href="/StudentManagement/addstudent"
 				class="btn btn-primary btn-sm mb-3"> Add Student </a> <a
 				href="/StudentManagement/logout"
@@ -59,9 +59,9 @@
 						<td><c:out value="${tempStudent.course}" /></td>
 						<td><c:out value="${tempStudent.country}" /></td>
 						<td>
-							<!-- Add "update" button/link --> <a
+							 <a
 							href="/StudentManagement/updatestudent?studentId=${tempStudent.id}"
-							class="btn btn-info btn-sm"> Update </a> <!-- Add "delete" button/link -->
+							class="btn btn-info btn-sm"> Update </a> 
 							<a
 							href="/StudentManagement/deletestudent?studentId=${tempStudent.id}"
 							class="btn btn-danger btn-sm"
